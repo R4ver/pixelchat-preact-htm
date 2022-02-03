@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "strict": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "preact",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "removeComments": true,
+        "moduleResolution": "node",
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "types": [
+            "node"
+        ],
+        "outDir": "./lib",
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+    ],
+    "exclude": [
+        "node_modules",
+        "**/__tests__/*"
+    ],
+}
