@@ -1,10 +1,23 @@
 {
     "name": "pixelchat-preact-jsx",
     "version": "0.1.0",
+    "main": "lib/index.js",
     "scripts": {
         "dev-server": "cd dev-server&&node server",
         "build": "rm -rf lib&&set NODE_ENV=production&&webpack",
-        "start": "set NODE_ENV=development&&webpack watch"
+        "start": "set NODE_ENV=development&&webpack watch",
+        "prepare": "npm run build",
+        "version": "git add -A src",
+        "postversion": "git push && git push --tags"
+    },
+    "keywords": [
+        "pixelchat",
+        "preact"
+    ],
+    "author": "R4ver",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:R4ver/pixelchat-preact-htm.git"
     },
     "files": [
         "lib/**/*"
