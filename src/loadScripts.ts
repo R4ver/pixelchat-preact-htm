@@ -33,24 +33,3 @@ export const loadScriptsDev = ( src: string | string[] = dependencies ) => {
         } );
     }
 };
-
-// export const loadInDev = async () => {
-//     const preactScript = document.createElement( "script" );
-//     preactScript.src = dependencies.preact;
-//     preactScript.type = "text/javascript";
-//     preactScript.async = true;
-
-//     const preactHooksScript = document.createElement( "script" );
-//     preactHooksScript.src = dependencies.preactHooks;
-//     preactHooksScript.type = "text/javascript";
-//     preactHooksScript.async = true;
-
-//     const htmScript = document.createElement( "script" );
-//     htmScript.src = dependencies.htm;
-//     htmScript.type = "text/javascript";
-//     htmScript.async = true;
-
-//     document.head.appendChild( preactScript );
-//     document.head.appendChild( preactHooksScript );
-//     document.head.appendChild( htmScript );
-// };

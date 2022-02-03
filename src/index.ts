@@ -36,6 +36,7 @@ window.Pixel.Preact.Init = async () => {
         template: ( ...args: any ) => window.Pixel.Preact._htm( ...args ),
         render: ( node: HTMLElement, domElement: HTMLElement ) => preact.render( preact.h( node ), domElement ),
         ...preactHooks,
+        ...preact,
         useEvent: ( event: string[] ) => {
             const [s] = Pixel.Preact.useState( event );
             const [data, setData] = Pixel.Preact.useState( {} );

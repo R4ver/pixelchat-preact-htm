@@ -1,6 +1,6 @@
 {
     "name": "pixelchat-preact-htm",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "main": "lib/index.js",
     "description": "A small library to use preact and jsx (htm) to create overlay for Pixelchat",
     "homepage": "https://github.com/R4ver/pixelchat-preact-htm",
