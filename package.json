@@ -1,5 +1,5 @@
 {
-    "name": "pixelchat-preact-jsx",
+    "name": "pixelchat-preact-htm",
     "version": "0.1.0",
     "main": "lib/index.js",
     "scripts": {
