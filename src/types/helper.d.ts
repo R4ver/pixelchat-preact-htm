@@ -15,6 +15,10 @@ declare module "helper" {
              * you can use a top level await for this at the top of your script
              **/
             static loadScripts( url: string | string[] ): Promise<void>;
+
+            static Preact: {
+                [id: string]: any
+            };
         }
     }
     type platforms = "twitch" | "glimesh" | "trovo";
