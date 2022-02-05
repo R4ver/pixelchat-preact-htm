@@ -1,4 +1,4 @@
-export const useInterval = ( callback: Function, delay: number ) => {
+export const useInterval = ( callback: Function, delay: number, dependencies: object[] = [] ) => {
     const savedCallback = Pixel.Preact.hooks.useRef();
 
     Pixel.Preact.hooks.useEffect( () => {
@@ -12,5 +12,5 @@ export const useInterval = ( callback: Function, delay: number ) => {
             const id = setInterval( handler, delay );
             return () => clearInterval( id );
         }
-    }, [delay] );
+    }, [delay, ...dependencies] );
 };
