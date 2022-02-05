@@ -6,7 +6,7 @@ export const useInterval = ( callback: Function, delay: number, dependencies: ob
     }, [callback] );
 
     Pixel.Preact.hooks.useEffect( () => {
-        const handler = ( ...args: any[] ) => savedCallback.current( ...args );
+        const handler = ( ...args: any[] ) => savedCallback.current( ...args, ...dependencies );
 
         if ( delay !== null && delay !== 0 ) {
             const id = setInterval( handler, delay );
