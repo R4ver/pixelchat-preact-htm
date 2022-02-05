@@ -44,6 +44,9 @@ window.Pixel.Preact.Init = async () => {
             useEvent,
             useInterval 
         },
+        components: {
+
+        },
         template: ( ...args: any ) => window.Pixel.Preact._htm( ...args ),
         render: ( node: HTMLElement, domElement: HTMLElement ) => preact.render( preact.h( node ), domElement ),
         
